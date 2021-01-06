@@ -1,0 +1,66 @@
+.figure {
+  &__creamy,
+  &__abstract,
+  &__abstract-2,
+  &__circle-medium,
+  &__circle-small {
+    position: absolute;
+    &-1,
+    &-2,
+    &-3,
+    &-4,
+    &-5 {
+      position: absolute;
+    }
+  }
+  &__creamy {
+    right: -15rem;
+    top: -23rem;
+  }
+  &__abstract {
+    top: 20rem;
+    left: -10rem;
+  }
+  &__abstract-2 {
+    top: 30rem;
+    left: 40%;
+  }
+  &__circle {
+    &-medium {
+      bottom: 12rem;
+      left: 12rem;
+    }
+    &-small {
+      &-1 {
+        left: 37%;
+        top: 25rem;
+        transform: translateX(-37%);
+      }
+      &-2 {
+        top: 15rem;
+        right: 25rem;
+      }
+      &-3 {
+        top: 50%;
+        right: 5rem;
+        transform: translateY(-50%);
+      }
+      &-4 {
+        bottom: -2rem;
+        right: 3rem;
+      }
+      &-5 {
+        left: 37%;
+        bottom: 10rem;
+        transform: translateX(-37%);
+      }
+    }
+  }
+}
+
+.content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: blue;
+}
