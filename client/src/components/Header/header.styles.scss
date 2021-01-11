@@ -1,0 +1,29 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 11.25rem;
+  width: 100%;
+  background-color: transparent;
+
+  &__logo {
+    width: 11.25rem;
+  }
+
+  &__nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-basis: 50%;
+
+    &-link {
+      transition: all 0.5s;
+      margin-right: 3.5rem;
+
+      &:hover {
+        cursor: pointer;
+        font-weight: bold;
+      }
+    }
+  }
+}

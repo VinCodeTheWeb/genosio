@@ -4,4 +4,16 @@
   width: 128rem;
   height: 80rem;
   border: 1px solid black;
+
+  &__headings {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 20rem;
+    width: 55rem;
+    margin-left: 15rem;
+    margin-top: 17rem;
+    border: 1px solid black;
+  }
 }
