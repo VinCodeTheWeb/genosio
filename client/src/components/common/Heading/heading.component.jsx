@@ -1,8 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import './heading.styles.scss';
-
 const Heading = ({ text, h, fontWeight, fontSize, color }) => {
   const Tag = h;
 

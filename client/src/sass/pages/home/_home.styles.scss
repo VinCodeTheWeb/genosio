@@ -24,4 +24,9 @@
     top: 20rem;
     right: 9rem;
   }
+
+  @include responsive(phone) {
+    width: 100vw;
+    height: 100vh;
+  }
 }

@@ -17,7 +17,7 @@ $breakpoint arguments:
 
 // 1em = 16px
 
-@mixin respond($breakpoint) {
+@mixin responsive($breakpoint) {
   @if $breakpoint==phone {
     // PHONE = 0PX - 600PX
     @media only screen and (max-width: 37.5em) {

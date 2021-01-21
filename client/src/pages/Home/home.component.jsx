@@ -3,37 +3,35 @@ import { useTranslation } from 'react-i18next';
 
 import { HeroBackgroundImage } from 'components/HeroBackgroundImg/hero-background-image.component';
 import { Header } from 'components/Header/header.component';
-import { Heading } from 'components/Heading/heading.component';
-import { Button } from 'components/Button/button.component';
+
+import { Button, Heading } from 'components/common/';
 
 import Illustration from 'assets/images/illustration.png';
-import './home.styles.scss';
 
 const Home = () => {
-  const { t } = useTranslation();
+  const { t } = useTranslation('./pages/home');
 
   return (
-    <div className="home">
+    <div className='home'>
       <HeroBackgroundImage>
         <Header />
-        <div className="home__headings">
-          <Heading text='From Idea' />
-          <Heading text='To Production' fontWeight={700} />
+        <div className='home__headings'>
+          <Heading text={t('heading1')} />
+          <Heading text={t('heading2')} fontWeight={700} />
           <Heading
             h='h5'
-            text={"We are a bright team of designer & developer"}
+            text={t('subheading1')}
             fontSize='2.5rem'
             color='grey'
           />
           <div className='home__cta'>
-          <Button primary text='Explore More' round />
+           <Button primary text={t('btn1')} round />
           </div>
 
           <div className='home__illustration'>
             <img src={Illustration} alt='illustration' />
           </div>
         </div>
-        
       </HeroBackgroundImage>
     </div>
   )

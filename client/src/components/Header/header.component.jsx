@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from 'react-scroll';
 
 import Logo from 'assets/images/logo.png';
-import './header.styles.scss'
 
 const Header = () => {
   return (

@@ -6,8 +6,6 @@ import FigureAbstract02 from 'assets/images/figure-abstract-02.png';
 import FigureCircleMedium from 'assets/images/figure-circle-medium.png';
 import FigureCircleSmall from 'assets/images/figure-circle-small.png';
 
-import './hero-background-image.styles.scss';
-
 const HeroBackgroundImage = ({ children }) => (
   <>
     <img className='figure__creamy' src={FigureCreamy} alt='figure-creamy' />

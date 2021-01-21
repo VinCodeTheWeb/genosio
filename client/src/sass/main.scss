@@ -8,3 +8,14 @@
 @import './base/base';
 @import './base/typos';
 @import './base/utils';
+
+// Components imports
+@import './components/HeroBackgroundImg/hero-background-img.styles';
+@import './components/Header/header.styles';
+
+// Component common import
+@import './components/common/Button/button.styles';
+@import './components/common/Heading/heading.styles';
+
+// Pages imports
+@import './pages/home/home.styles';

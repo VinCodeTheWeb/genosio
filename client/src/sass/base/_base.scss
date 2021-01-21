@@ -21,17 +21,17 @@ html {
   // - 1rem = 10px (10 / 16)
   font-size: 62.5%;
 
-  @include respond(tab-land) {
+  @include responsive(tab-land) {
     // - 1rem = 9px (9 / 16)
     font-size: 56.25%;
   }
 
-  @include respond(tab-port) {
+  @include responsive(tab-port) {
     // - 1rem = 8px (8 / 16)
     font-size: 50%;
   }
 
-  @include respond(big-desktop) {
+  @include responsive(big-desktop) {
     // - 1rem = 12px (12 / 16)
     font-size: 75%;
   }

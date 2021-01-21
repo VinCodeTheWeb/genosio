@@ -16,6 +16,10 @@
   &__creamy {
     right: -15rem;
     top: -23rem;
+
+    @include responsive(phone) {
+      display: none;
+    }
   }
   &__abstract {
     top: 20rem;

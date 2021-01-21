@@ -1,8 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import './button.styles.scss';
-
 const Button = ({ primary, text, fontWeight, fontSize, round }) => {
 
   const styles = {
