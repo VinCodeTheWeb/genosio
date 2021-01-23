@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Heading = ({ text, h, fontWeight, fontSize, color }) => {
+const Heading = ({ text, h, fontWeight, color }) => {
   const Tag = h;
 
   const headingColor = (() => {
@@ -19,7 +19,6 @@ const Heading = ({ text, h, fontWeight, fontSize, color }) => {
 
   const styles = {
     fontWeight,
-    fontSize,
     color: headingColor
   }
 
@@ -32,7 +31,6 @@ Heading.defaultProps = {
   text: 'Heading 1',
   h: 'h1',
   fontWeight: 300,
-  fontSize: '6rem',
   color: '#000'
 };
 

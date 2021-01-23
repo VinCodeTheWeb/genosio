@@ -21,7 +21,6 @@ const Home = () => {
           <Heading
             h='h5'
             text={t('subheading1')}
-            fontSize='2.5rem'
             color='grey'
           />
           <div className='home__cta'>
