@@ -6,7 +6,7 @@ import { RouterWithSubRoutes } from 'components/RouterWithSubRoutes/router-with-
 
 const App = () => (
   <Router>
-    <div>
+    <div className='app'>
       <Switch>
         {routes.map((route, i) => (
           <RouterWithSubRoutes key={i} {...route} />
