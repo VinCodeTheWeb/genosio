@@ -8,10 +8,10 @@ const Header = () => {
     <header className="header">
       <img className="header__logo" src={Logo} alt="logo" />
       <nav className="header__nav">
-        <Link className='header__nav-link'>Home</Link>
-        <Link className='header__nav-link'>About</Link>
-        <Link className='header__nav-link'>Services</Link>
-        <Link className='header__nav-link'>Contact</Link>
+        <Link className='header__nav-link' to='home'>Home</Link>
+        <Link className='header__nav-link' to='about'>About</Link>
+        <Link className='header__nav-link' to='services'>Services</Link>
+        <Link className='header__nav-link' to='contact'>Contact</Link>
       </nav>
     </header>
   )
