@@ -11,6 +11,9 @@
 # production
 /build
 
+# previous F.E
+/client(old)
+
 # misc
 .DS_Store
 .env.local
