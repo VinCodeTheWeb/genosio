@@ -1,10 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import { ThemeProvider, createMuiTheme } from '@material-ui/core/styles';
+
+// App Theme
+import { THEME } from 'styles/theme.styles';
+
+//  CssBaseLine For Global Reset
+import CssBaseline from '@material-ui/core/CssBaseline';
+
+// App Component
+import { App } from 'components/App/app.component';
 
 ReactDOM.render(
-    <React.StrictMode>
-        <h1>Hello Genioso!</h1>
-    </React.StrictMode>,
+    <ThemeProvider theme={createMuiTheme(THEME)}>
+        <CssBaseline />
+        <App />
+    </ThemeProvider>,
     document.getElementById('root'),
 );

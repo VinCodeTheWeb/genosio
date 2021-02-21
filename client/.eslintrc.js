@@ -21,12 +21,13 @@ module.exports = {
     },
     parser: '@typescript-eslint/parser',
     parserOptions: {
+        createDefaultProgram: true,
         ecmaFeatures: {
             jsx: true,
         },
         ecmaVersion: 2020,
         sourceType: 'module',
-        project: './packages/*/tsconfig.json',
+        project: ['./tsconfig.json'],
     },
     settings: {
         react: {
@@ -35,7 +36,9 @@ module.exports = {
     },
     ignorePatterns: ['/*.*'],
     rules: {
+        'import/prefer-default-export': 'off',
         'linebreak-style': 'off',
+        'no-console': 'off',
         'react/jsx-props-no-spreading': 'off',
         'prettier/prettier': [
             'error',
