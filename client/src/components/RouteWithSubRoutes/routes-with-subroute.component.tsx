@@ -12,9 +12,7 @@ const RouteWithSubRoute: React.FC<IRoute> = (route) => (
     <Route
         path={route.path}
         exact={route.exact}
-        render={(props: RouteComponentProps<any>) => (
-            <route.component {...props} routes={route.routes} />
-        )}
+        render={(props: RouteComponentProps<any>) => <route.component {...props} routes={route.routes} />}
     />
 );
 

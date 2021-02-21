@@ -43,12 +43,12 @@ module.exports = {
         'prettier/prettier': [
             'error',
             {
-                printWidth: 80,
-                trailingComma: 'all',
                 semi: true,
-                jsxSingleQuote: true,
+                trailingComma: 'all',
                 singleQuote: true,
-                indent: [2, 'tab'],
+                printWidth: 120,
+                tabWidth: 4,
+                endOfLine: 'auto',
             },
         ],
     },

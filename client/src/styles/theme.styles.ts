@@ -6,4 +6,9 @@ export const THEME: ITheme = {
         fontWeight: 400,
         lineHeight: 1.6,
     },
+    palette: {
+        primary: {
+            main: '#bd1e59',
+        },
+    },
 };
