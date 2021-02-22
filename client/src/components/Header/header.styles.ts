@@ -5,7 +5,19 @@ export const styles = (): IHeader => ({
         backgroundColor: 'white',
         boxShadow: 'none',
     },
+    wrapper: {
+        justifyContent: 'space-between',
+    },
     logo: {
         height: '140px',
+    },
+    nav: {
+        display: 'flex',
+    },
+    link: {
+        listStyleType: 'none',
+        fontSize: '15px',
+        color: 'black',
+        marginRight: '35px',
     },
 });
