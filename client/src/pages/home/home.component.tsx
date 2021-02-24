@@ -9,7 +9,7 @@ const HomePage: React.FC = () => {
         <>
             <Header />
             <Container>
-                <Grid alignItems="center">
+                <Grid>
                     <Typography variant="h1">From Idea</Typography>
                 </Grid>
                 <Grid>

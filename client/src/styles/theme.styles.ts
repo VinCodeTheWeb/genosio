@@ -5,6 +5,7 @@ export const THEME: ITheme = {
         fontFamily: `'Josefin Sans', sans-serif`,
         fontWeight: 400,
         lineHeight: 1.6,
+        htmlFontSize: 10,
     },
     palette: {
         primary: {

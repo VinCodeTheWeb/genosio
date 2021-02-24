@@ -1,6 +1,12 @@
+import { Theme } from '@material-ui/core';
 import { IHeader } from './header.type';
 
-export const styles = (): IHeader => ({
+// type TBreakpoints = ["up"] | ["down"] | ["only"] | ["between"]
+// interface IThem {
+//   breakpoints
+// }
+
+export const styles = ({ breakpoints }: Theme): IHeader => ({
     header: {
         backgroundColor: 'white',
         boxShadow: 'none',
@@ -13,6 +19,9 @@ export const styles = (): IHeader => ({
     },
     nav: {
         display: 'flex',
+        [breakpoints.down('sm')]: {
+            display: 'none',
+        },
     },
     link: {
         listStyleType: 'none',

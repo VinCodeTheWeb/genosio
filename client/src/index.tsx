@@ -2,6 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { ThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 
+// CSS Base
+import './styles/_base.css';
 // App Theme
 import { THEME } from 'styles/theme.styles';
 

@@ -2,6 +2,7 @@ interface ITypograhy {
     fontFamily: string;
     fontWeight: number;
     lineHeight: number;
+    htmlFontSize: number;
 }
 
 interface IPalette {
