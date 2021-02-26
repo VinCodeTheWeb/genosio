@@ -1,5 +1,5 @@
 import React from 'react';
-import { Typography, Container, Grid } from '@material-ui/core';
+import { Typography, Container, Grid, Box } from '@material-ui/core';
 
 // Assets
 import Illustration from 'assets/illustration@2x.png';
@@ -18,9 +18,15 @@ const HomePage: React.FC = () => {
             <Header />
             <Container className={classes.container}>
                 <Grid container direction="column" justify="center" md={6}>
-                    <Typography variant="h1">From Idea</Typography>
-                    <Typography variant="h1">To Production</Typography>
-                    <Typography variant="h6">We are a bright team of designer & developer</Typography>
+                    <Typography className={classes.headingFirst} variant="h1">
+                        From Idea
+                    </Typography>
+                    <Typography className={classes.headingSecond} variant="h1">
+                        To Production
+                    </Typography>
+                    <Typography className={classes.subheading} variant="h6">
+                        We are a bright team of designer & developer
+                    </Typography>
                 </Grid>
                 <Grid container direction="column" justify="center" md={6}>
                     <img src={Illustration} alt="illustration" />
