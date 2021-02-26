@@ -1,11 +1,6 @@
 import { Theme } from '@material-ui/core';
 import { IHeader } from './header.type';
 
-// type TBreakpoints = ["up"] | ["down"] | ["only"] | ["between"]
-// interface IThem {
-//   breakpoints
-// }
-
 export const styles = ({ breakpoints }: Theme): IHeader => ({
     header: {
         backgroundColor: 'white',
