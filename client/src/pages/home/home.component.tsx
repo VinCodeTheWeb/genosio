@@ -17,7 +17,7 @@ const HomePage: React.FC = () => {
         <>
             <Header />
             <Container className={classes.container}>
-                <Grid container direction="column" justify="center" md={6}>
+                <Grid container direction="column" justify="center" md={6} sm={12} item>
                     <Typography className={classes.headingFirst} variant="h1">
                         From Idea
                     </Typography>
@@ -28,7 +28,7 @@ const HomePage: React.FC = () => {
                         We are a bright team of designer & developer
                     </Typography>
                 </Grid>
-                <Grid container direction="column" justify="center" md={6}>
+                <Grid container direction="column" justify="center" md={6} sm={12} item>
                     <img src={Illustration} alt="illustration" />
                 </Grid>
             </Container>
