@@ -11,7 +11,7 @@ export const App: React.FC = () => (
     <Router>
         <>
             <Switch>
-                {routes.map((route, index) => (
+                {routes.map((route) => (
                     <RouteWithSubRoute key={route.path} {...route} />
                 ))}
             </Switch>

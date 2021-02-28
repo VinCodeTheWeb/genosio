@@ -1,5 +1,5 @@
 import React from 'react';
-import { Typography, Container, Grid, Box } from '@material-ui/core';
+import { Typography, Container, Grid } from '@material-ui/core';
 
 // Assets
 import Illustration from 'assets/illustration@2x.png';
@@ -14,10 +14,10 @@ const HomePage: React.FC = () => {
     const classes = useStyles();
 
     return (
-        <>
+        <Container>
             <Header />
             <Container className={classes.container}>
-                <Grid container direction="column" justify="center" md={6} sm={12} item>
+                <Grid container direction="column" justify="center" md={6} sm={6} xs={12} item>
                     <Typography className={classes.headingFirst} variant="h1">
                         From Idea
                     </Typography>
@@ -28,11 +28,11 @@ const HomePage: React.FC = () => {
                         We are a bright team of designer & developer
                     </Typography>
                 </Grid>
-                <Grid container direction="column" justify="center" md={6} sm={12} item>
-                    <img src={Illustration} alt="illustration" />
+                <Grid container justify="flex-end" alignItems="center" md={6} sm={6} xs={12} item>
+                    <img className={classes.illustration} src={Illustration} alt="illustration" />
                 </Grid>
             </Container>
-        </>
+        </Container>
     );
 };
 
