@@ -10,7 +10,10 @@ export const styles = ({ breakpoints }: Theme): IHeader => ({
         justifyContent: 'space-between',
     },
     logo: {
-        height: '140px',
+        height: '14rem',
+        [breakpoints.down('sm')]: {
+            height: '8rem',
+        },
     },
     nav: {
         display: 'flex',
@@ -20,8 +23,8 @@ export const styles = ({ breakpoints }: Theme): IHeader => ({
     },
     link: {
         listStyleType: 'none',
-        fontSize: '15px',
+        fontSize: '1.5rem',
         color: 'black',
-        marginRight: '35px',
+        marginRight: '3.5rem',
     },
 });

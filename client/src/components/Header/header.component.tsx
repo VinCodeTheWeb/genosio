@@ -1,6 +1,7 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import { AppBar, Toolbar, Typography } from '@material-ui/core/';
+import { AppBar, Toolbar, Typography, IconButton } from '@material-ui/core/';
+import { Menu } from '@material-ui/icons';
 import { Link } from 'react-router-dom';
 // Logo
 import Logo from 'assets/logo.png';
@@ -33,6 +34,9 @@ const Header: React.FC = () => {
                         Contact
                     </Typography>
                 </nav>
+                <IconButton aria-label="menu" component="span">
+                    <Menu />
+                </IconButton>
             </Toolbar>
         </AppBar>
     );
