@@ -7,6 +7,9 @@ import Illustration from 'assets/illustration@2x.png';
 // Header
 import { Header } from 'components/Header/header.component';
 
+// Menu
+import { Menu } from 'components/Menu/menu.component';
+
 // Styles
 import { useStyles } from './home.styles';
 
@@ -16,6 +19,7 @@ const HomePage: React.FC = () => {
     return (
         <Container>
             <Header />
+            <Menu />
             <Container className={classes.container}>
                 <Grid container direction="column" justify="center" md={6} sm={6} xs={12} item>
                     <Typography className={classes.headingFirst} variant="h1">

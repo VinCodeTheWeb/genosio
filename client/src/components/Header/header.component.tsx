@@ -34,7 +34,7 @@ const Header: React.FC = () => {
                         Contact
                     </Typography>
                 </nav>
-                <IconButton aria-label="menu" component="span">
+                <IconButton className={classes.iconButton} aria-label="menu" component="span">
                     <Menu />
                 </IconButton>
             </Toolbar>
