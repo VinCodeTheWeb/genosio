@@ -1,5 +1,5 @@
 import React from 'react';
-import { Typography, Container, Grid } from '@material-ui/core';
+import { Typography, Container, Grid, Button } from '@material-ui/core';
 
 // Assets
 import Illustration from 'assets/illustration@2x.png';
@@ -31,6 +31,9 @@ const HomePage: React.FC = () => {
                     <Typography className={classes.subheading} variant="h6">
                         We are a bright team of designer & developer
                     </Typography>
+                    <Button variant="contained" color="primary">
+                        Explore More
+                    </Button>
                 </Grid>
                 <Grid container justify="flex-end" alignItems="center" md={6} sm={6} xs={12} item>
                     <img className={classes.illustration} src={Illustration} alt="illustration" />

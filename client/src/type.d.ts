@@ -1,4 +1,4 @@
-type AppContext = {
-    drawerState: boolean;
-    toggleDrawerState: () => void;
+type TAppContext = {
+    drawer: boolean;
+    toggleDrawer: () => void;
 };

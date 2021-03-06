@@ -1,4 +1,4 @@
-import { Theme, createStyles } from '@material-ui/core';
+import { Theme, createStyles, makeStyles } from '@material-ui/core';
 
 export const styles = ({ breakpoints }: Theme) =>
     createStyles({
@@ -20,14 +20,6 @@ export const styles = ({ breakpoints }: Theme) =>
         },
         nav: {
             display: 'flex',
-            [breakpoints.down('sm')]: {
-                display: 'none',
-            },
-        },
-        iconButton: {
-            [breakpoints.up('sm')]: {
-                display: 'none',
-            },
         },
         link: {
             listStyleType: 'none',
@@ -36,3 +28,5 @@ export const styles = ({ breakpoints }: Theme) =>
             marginRight: '3.5rem',
         },
     });
+
+export const useStyles = makeStyles(styles);

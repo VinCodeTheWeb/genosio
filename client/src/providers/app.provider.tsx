@@ -6,20 +6,20 @@ interface IAppProviderProps {
 }
 
 export const AppContext = createContext({
-    drawerState: false,
-    toggleDrawerState: () => {},
+    drawer: false,
+    toggleDrawer: () => {},
 });
 
 const AppProvider: React.FC<IAppProviderProps> = ({ children }) => {
-    const [drawerState, setDrawerState] = useState<boolean>(false);
+    const [drawer, setDrawer] = useState<boolean>(false);
 
-    const toggleDrawerState = () => setDrawerState(!drawerState);
+    const toggleDrawer = () => setDrawer(!drawer);
 
     return (
         <AppContext.Provider
             value={{
-                drawerState,
-                toggleDrawerState,
+                drawer,
+                toggleDrawer,
             }}
         >
             {children}
