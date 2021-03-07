@@ -33,6 +33,13 @@ const styles = ({ breakpoints }: Theme) =>
                 fontSize: '1.5rem',
             },
         },
+        btnExplore: {
+            width: '18.5rem',
+            height: '5rem',
+            borderRadius: 25,
+            textTransform: 'none',
+            marginTop: '5rem',
+        },
         illustration: {
             width: '43rem',
             [breakpoints.down('sm')]: {
