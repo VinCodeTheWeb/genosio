@@ -1,8 +1,8 @@
 import React, { useContext } from 'react';
-import { makeStyles } from '@material-ui/core/styles';
+import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import { AppBar, Toolbar, Typography, IconButton, Hidden } from '@material-ui/core/';
 import { Menu } from '@material-ui/icons';
-import { Link } from 'react-router-dom';
 
 // AppContext
 import { AppContext } from 'providers/app.provider';
@@ -15,10 +15,12 @@ import { useStyles } from './header.styles';
 
 const Header: React.FC = () => {
     const classes = useStyles();
+    const { t } = useTranslation('components/header');
+
     const { toggleDrawer } = useContext(AppContext) as TAppContext;
 
     return (
-        <AppBar className={classes.header} position="static">
+        <AppBar data-test="header" className={classes.header} position="static">
             <Toolbar className={classes.wrapper}>
                 <Link to="/">
                     <img className={classes.logo} src={Logo} alt="logo" />
@@ -26,7 +28,7 @@ const Header: React.FC = () => {
                 <Hidden mdDown>
                     <nav className={classes.nav}>
                         <Typography className={classes.link} component="li">
-                            Home
+                            {t('header:home')}
                         </Typography>
                         <Typography className={classes.link} component="li">
                             About us
