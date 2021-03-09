@@ -19,8 +19,7 @@
         "isolatedModules": true,
         "noEmit": true,
         "jsx": "react-jsx",
-        "outDir": "../temp",
-        "typeRoots": ["../node_modules/@types"]
+        "outDir": "../temp"
     },
     "include": ["src"],
     "exclude": ["node_modules"]
