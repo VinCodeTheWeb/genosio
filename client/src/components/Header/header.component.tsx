@@ -40,7 +40,7 @@ const Header: React.FC = () => {
                         </Typography>
                     </nav>
                 </Hidden>
-                <Hidden mdUp>
+                <Hidden data-testid="menu__mobile" mdUp>
                     <IconButton onClick={toggleDrawer} aria-label="menu" component="span">
                         <Menu />
                     </IconButton>

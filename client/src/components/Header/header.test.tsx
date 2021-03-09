@@ -1,15 +1,21 @@
-import React from 'react';
-import { render, cleanup } from '@testing-library/react';
+import { cleanup, fireEvent } from '@testing-library/react';
 import '@testing-library/jest-dom';
+
+// Components
 import { Header } from './header.component';
 
-afterEach(cleanup);
+// Test Utils Function
+import { findByTestId } from '__test__/testUtils';
 
 jest.mock('react-i18next', () => ({
     useTranslation: () => ({ t: (key: string) => key }),
 }));
 
-it('renders without error', () => {
-    const { getByTestId } = render(<Header />);
-    expect(getByTestId('header')).toBeInTheDocument();
+describe('<Header /> component', () => {
+    afterEach(cleanup);
+
+    it('renders without error', () => {
+        const header = findByTestId(<Header />, 'header');
+        expect(header).toBeInTheDocument();
+    });
 });
