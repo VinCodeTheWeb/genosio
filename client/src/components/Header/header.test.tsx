@@ -5,7 +5,7 @@ import '@testing-library/jest-dom';
 import { Header } from './header.component';
 
 // Test Utils Function
-import { findByTestId } from '__test__/testUtils';
+import { findByRole } from '__test__/testUtils';
 
 jest.mock('react-i18next', () => ({
     useTranslation: () => ({ t: (key: string) => key }),
@@ -15,7 +15,7 @@ describe('<Header /> component', () => {
     afterEach(cleanup);
 
     it('renders without error', () => {
-        const header = findByTestId(<Header />, 'header');
+        const header = findByRole(<Header />, 'heading');
         expect(header).toBeInTheDocument();
     });
 });

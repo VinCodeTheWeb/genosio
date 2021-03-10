@@ -1,8 +1,7 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import '@testing-library/jest-dom';
 
-export const findByTestId = (Component: React.ReactElement, dataTestId: string): HTMLElement => {
-    const { getByTestId } = render(Component);
-    return getByTestId(dataTestId);
+export const findByRole = (Component: React.ReactElement, role: string): HTMLElement => {
+    const { getByRole } = render(Component);
+    return getByRole(role);
 };

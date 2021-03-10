@@ -19,7 +19,7 @@ const Header: React.FC = () => {
     const { toggleDrawer } = useContext(AppContext) as TAppContext;
 
     return (
-        <AppBar data-testid="header" className={classes.header} position="static">
+        <AppBar role="heading" className={classes.header} position="static">
             <Toolbar className={classes.wrapper}>
                 <Box>
                     <img className={classes.logo} src={Logo} alt="logo" />
@@ -40,8 +40,8 @@ const Header: React.FC = () => {
                         </Typography>
                     </nav>
                 </Hidden>
-                <Hidden data-testid="menu__mobile" mdUp>
-                    <IconButton onClick={toggleDrawer} aria-label="menu" component="span">
+                <Hidden mdUp>
+                    <IconButton role="presentation" onClick={toggleDrawer} aria-label="menu" component="span">
                         <Menu />
                     </IconButton>
                 </Hidden>
