@@ -1,13 +1,13 @@
 import React, { useContext } from 'react';
 import { useTranslation } from 'react-i18next';
-import { AppBar, Toolbar, Typography, IconButton, Hidden, Box } from '@material-ui/core/';
+import { AppBar, Toolbar, Typography, IconButton, Hidden } from '@material-ui/core/';
 import { Menu } from '@material-ui/icons';
+
+// Components
+import { Logo } from 'components/Logo/logo.component';
 
 // AppContext
 import { AppContext } from 'providers/app.provider';
-
-// Logo
-import Logo from 'assets/logo.png';
 
 // Header Styles
 import { useStyles } from './header.styles';
@@ -21,9 +21,7 @@ const Header: React.FC = () => {
     return (
         <AppBar role="heading" className={classes.header} position="static">
             <Toolbar className={classes.wrapper}>
-                <Box>
-                    <img className={classes.logo} src={Logo} alt="logo" />
-                </Box>
+                <Logo />
                 <Hidden mdDown>
                     <nav className={classes.nav}>
                         <Typography className={classes.link} component="li">
