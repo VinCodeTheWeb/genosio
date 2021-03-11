@@ -1,18 +1,18 @@
 import React from 'react';
 import { Box } from '@material-ui/core/';
 
-// Header Styles
-import { useStyles } from './logo.styles';
-
-// Logo
+// Logo Asset
 import LogoImg from 'assets/logo.png';
+
+// Logo Styles
+import { useStyles } from './logo.styles';
 
 const Logo: React.FC = () => {
     const classes = useStyles();
 
     return (
         <Box>
-            <img role="img" className={classes.logo} src={LogoImg} alt="logo" />
+            <img className={classes.logo} src={LogoImg} alt="logo" />
         </Box>
     );
 };

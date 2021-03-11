@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import { useTranslation } from 'react-i18next';
-import { AppBar, Toolbar, Typography, IconButton, Hidden } from '@material-ui/core/';
+import { AppBar, Toolbar, ListItem, IconButton, Hidden } from '@material-ui/core/';
 import { Menu } from '@material-ui/icons';
 
 // Components
@@ -24,18 +24,10 @@ const Header: React.FC = () => {
                 <Logo />
                 <Hidden mdDown>
                     <nav className={classes.nav}>
-                        <Typography className={classes.link} component="li">
-                            {t('home')}
-                        </Typography>
-                        <Typography className={classes.link} component="li">
-                            About us
-                        </Typography>
-                        <Typography className={classes.link} component="li">
-                            Services
-                        </Typography>
-                        <Typography className={classes.link} component="li">
-                            Contact
-                        </Typography>
+                        <ListItem className={classes.link}>{t('home')}</ListItem>
+                        <ListItem className={classes.link}>{t('about')}</ListItem>
+                        <ListItem className={classes.link}>{t('services')}</ListItem>
+                        <ListItem className={classes.link}>{t('contact')}</ListItem>
                     </nav>
                 </Hidden>
                 <Hidden mdUp>
