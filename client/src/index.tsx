@@ -14,7 +14,7 @@ import { THEME } from 'theme/theme.config';
 import CssBaseline from '@material-ui/core/CssBaseline';
 
 // App Component
-import { App } from 'components/App/app.component';
+import { App } from 'App';
 
 ReactDOM.render(
     <ThemeProvider theme={createMuiTheme(THEME)}>
