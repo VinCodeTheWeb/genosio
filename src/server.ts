@@ -4,6 +4,8 @@ import dotenv from 'dotenv';
 // Env vars
 dotenv.config({ path: './config/config.env' });
 
+import './db/db';
+
 const app: Express = express();
 
 // Body parser
