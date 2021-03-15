@@ -1,5 +1,6 @@
 import express, { Express } from 'express';
 import dotenv from 'dotenv';
+import morgan from 'morgan';
 
 // Env vars
 dotenv.config({ path: './config/config.env' });
@@ -10,6 +11,11 @@ const app: Express = express();
 
 // Body parser
 app.use(express.json());
+
+// Dev Loggin Middleware
+if (process.env.NODE_ENV !== 'production') {
+  app.use(morgan('dev'));
+}
 
 const PORT: string | number = process.env.PORT || 5000;
 
