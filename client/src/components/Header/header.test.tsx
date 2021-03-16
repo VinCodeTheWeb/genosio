@@ -1,21 +1,25 @@
-import { cleanup, fireEvent } from '@testing-library/react';
+import { cleanup, render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom';
 
 // Components
 import { Header } from './header.component';
-
-// Test Utils Function
-import { findByRole } from '__test__/testUtils';
 
 jest.mock('react-i18next', () => ({
     useTranslation: () => ({ t: (key: string) => key }),
 }));
 
 describe('<Header /> component', () => {
+    beforeEach(() => {
+        render(<Header />);
+    });
+
     afterEach(cleanup);
 
     it('renders without error', () => {
-        const header = findByRole(<Header />, 'heading');
-        expect(header).toBeInTheDocument();
+        render(<Header />);
+    });
+
+    it('should select header by its role', () => {
+        screen.getByRole('heading');
     });
 });
