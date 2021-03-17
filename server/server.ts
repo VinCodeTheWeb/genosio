@@ -19,4 +19,4 @@ if (process.env.NODE_ENV !== 'production') {
 
 const PORT: string | number = process.env.PORT || 5000;
 
-app.listen(PORT, () => console.log(`App running in PORT: ${PORT}`));
+app.listen(PORT, (): void => console.log(`App running in PORT: ${PORT}`));

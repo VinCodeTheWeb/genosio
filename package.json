@@ -2,11 +2,11 @@
   "name": "genosio",
   "version": "1.0.0",
   "description": "Genosio MERN stack code.",
-  "main": "server.js",
+  "main": "server.ts",
   "scripts": {
     "build": "tsc -p .",
     "start": "NODE_ENV=production node dist/server.js",
-    "server": "nodemon src/server.ts",
+    "server": "nodemon dist/server.js",
     "client-install": "npm install --prefix client",
     "client": "npm start --prefix client",
     "dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\""
