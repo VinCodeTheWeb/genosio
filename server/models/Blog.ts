@@ -1,10 +1,15 @@
-import { Schema } from 'mongoose';
+import { Schema, model } from 'mongoose';
 
-interface BlogDocument {}
-
-const BlogSchema = Schema({
+const BlogSchema = new Schema({
   title: {
     type: String,
     required: true,
+    trim: true,
   },
 });
+
+export interface BlogDocument {
+  title: string;
+}
+
+export default model('Blog', BlogSchema);
