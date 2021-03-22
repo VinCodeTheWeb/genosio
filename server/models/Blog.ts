@@ -1,15 +1,26 @@
-import { Schema, model } from 'mongoose';
+import { Document, Schema, model } from 'mongoose';
 
-const BlogSchema = new Schema({
+interface BlogDocument extends Document {
+  title: string;
+  author: string;
+  paragraph: [];
+}
+
+const BlogSchema: Schema = new Schema({
   title: {
     type: String,
     required: true,
     trim: true,
   },
+  author: {
+    type: String,
+    default: 'Vincenzo PELLEGRINI',
+    required: true,
+  },
+  paragraph: {
+    type: Array,
+    required: true,
+  },
 });
 
-export interface BlogDocument {
-  title: string;
-}
-
-export default model('Blog', BlogSchema);
+export default model<BlogDocument>('Blog', BlogSchema);
