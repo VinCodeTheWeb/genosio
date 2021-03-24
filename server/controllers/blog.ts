@@ -1,9 +1,10 @@
+import { Request, Response } from 'express';
 import Blog from '../models/Blog';
 
 // @desc    Create Blog
 // @route   POST /api/blog
 // @access  PRIVATE
-const createBlog = async (req, res) => {
+const createBlog = async (req: Request, res: Response) => {
   const { title, author, paragraph } = req.body;
 
   const blog = new Blog({
@@ -14,7 +15,7 @@ const createBlog = async (req, res) => {
 
   await blog.save();
 
-  req.status(201).json({ success: true, data: blog });
+  res.status(201).json({ success: true, data: blog });
 };
 
 export { createBlog };
