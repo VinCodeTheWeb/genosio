@@ -2,6 +2,8 @@ import express, { Express } from 'express';
 import dotenv from 'dotenv';
 import morgan from 'morgan';
 
+import blogRouter from './routes/blog';
+
 // Env vars
 dotenv.config({ path: './config/config.env' });
 
@@ -16,6 +18,9 @@ app.use(express.json());
 if (process.env.NODE_ENV !== 'production') {
   app.use(morgan('dev'));
 }
+
+// Mount Routes
+app.use('/api/v1/blog', blogRouter);
 
 const PORT: string | number = process.env.PORT || 5000;
 
