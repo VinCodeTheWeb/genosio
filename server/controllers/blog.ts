@@ -18,4 +18,13 @@ const createBlog = async (req: Request, res: Response) => {
   res.status(201).json({ success: true, data: blog });
 };
 
-export { createBlog };
+// @desc    Get All Blogs
+// @route   GET /api/blog
+// @access  PUBLIC
+const getBlogs = async (req: Request, res: Response) => {
+  const blogs = await Blog.find({});
+
+  res.status(200).json({ success: true, data: blogs });
+};
+
+export { createBlog, getBlogs };
