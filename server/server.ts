@@ -3,6 +3,7 @@ import dotenv from 'dotenv';
 import morgan from 'morgan';
 
 import blogRouter from './routes/blog';
+import emailRouter from './routes/email';
 
 // Env vars
 dotenv.config({ path: './config/config.env' });
@@ -21,6 +22,7 @@ if (process.env.NODE_ENV !== 'production') {
 
 // Mount Routes
 app.use('/api/v1/blog', blogRouter);
+app.use('/api/v1/email', emailRouter);
 
 const PORT: string | number = process.env.PORT || 5000;
 
