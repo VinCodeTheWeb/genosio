@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { lazy } from 'react';
 import { RouteComponentProps } from 'react-router-dom';
 
 // Pages
-import { HomePage } from 'pages';
+const Home = lazy(() => import('../pages/home/home.component'));
 
 interface IRoute {
     path: string;
@@ -15,6 +15,6 @@ export const routes: IRoute[] = [
     {
         path: '/',
         exact: true,
-        component: HomePage,
+        component: Home,
     },
 ];

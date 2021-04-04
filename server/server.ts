@@ -2,13 +2,16 @@ import express, { Express } from 'express';
 import dotenv from 'dotenv';
 import morgan from 'morgan';
 
-import blogRouter from './routes/blog';
-import emailRouter from './routes/email';
+import { connectDB } from './db/db';
 
 // Env vars
 dotenv.config({ path: './config/config.env' });
 
-import './db/db';
+// Connect to database
+connectDB();
+
+import blogRouter from './routes/blog';
+import emailRouter from './routes/email';
 
 const app: Express = express();
 

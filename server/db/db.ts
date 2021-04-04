@@ -1,8 +1,13 @@
 import mongoose from 'mongoose';
 
-const db = mongoose.connect('mongodb://127.0.0.1:27017/genosio', {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-});
+const connectDB = async () => {
+  const conn = await mongoose.connect('mongodb://127.0.0.1:27017/genosio-api', {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+    useFindAndModify: false,
+  });
 
-export { db };
+  console.log(`MongoDB Connected: ${conn.connection.host}`);
+};
+
+export { connectDB };
