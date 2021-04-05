@@ -4,7 +4,7 @@ import { AppBar, Toolbar, Typography, IconButton, Hidden } from '@material-ui/co
 import { Menu } from '@material-ui/icons';
 
 // Components
-import { Logo } from 'components/Logo/logo.component';
+import { Logo } from 'components/@genosio-ui/Logo/logo.component';
 
 // AppContext
 import { AppContext } from 'providers/app.provider';

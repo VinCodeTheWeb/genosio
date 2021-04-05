@@ -5,10 +5,10 @@ import { Typography, Container, Grid, Button, Hidden } from '@material-ui/core';
 import Illustration from 'assets/illustration@2x.png';
 
 // Header
-import { Header } from 'components/Header/header.component';
+import { Header } from 'components/@genosio-ui/Header/header.component';
 
 // Menu
-import { Menu } from 'components/Menu/menu.component';
+import { Menu } from 'components/@genosio-ui/Menu/menu.component';
 
 // Styles
 import { useStyles } from './home.styles';
