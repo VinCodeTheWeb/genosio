@@ -26,6 +26,9 @@ export const styles = ({ breakpoints }: Theme) =>
             fontSize: '1.5rem',
             color: 'black',
             marginRight: '3.5rem',
+            '&:hover': {
+                cursor: 'pointer',
+            },
         },
     });
 

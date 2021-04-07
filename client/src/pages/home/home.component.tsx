@@ -4,20 +4,24 @@ import { Typography, Container, Grid, Button, Hidden } from '@material-ui/core';
 // Assets
 import Illustration from 'assets/illustration@2x.png';
 
-// Header
+// Components
 import { Header } from 'components/@genosio-ui/Header/header.component';
-
-// Menu
 import { Menu } from 'components/@genosio-ui/Menu/menu.component';
 
+// HomeTemplate
+import { HomeTemplate } from 'templates/HomeTemplate';
 // Styles
 import { useStyles } from './home.styles';
 
 const HomePage: React.FC = () => {
     const classes = useStyles();
 
-    return (
-        <Container>
+    return <HomeTemplate header={<Header />} mobileMenu={<Menu />} />;
+};
+
+export default HomePage;
+
+/* <Container>
             <Header />
             <Menu />
             <Container className={classes.container}>
@@ -50,8 +54,4 @@ const HomePage: React.FC = () => {
                     </Grid>
                 </Grid>
             </Container>
-        </Container>
-    );
-};
-
-export default HomePage;
+        </Container> */
