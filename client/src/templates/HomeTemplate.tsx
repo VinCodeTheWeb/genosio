@@ -2,6 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Container, Grid } from '@material-ui/core';
 
+import Illustration from 'assets/illustration.png';
+
 interface HomeTemplateProps {
     header: React.ReactElement;
     mobileMenu: React.ReactElement;
@@ -17,7 +19,7 @@ const HomeTemplate: React.FC<HomeTemplateProps> = ({ header, mobileMenu }) => {
                     1
                 </Grid>
                 <Grid container item md={6} xs={12}>
-                    2
+                    <img src={Illustration} alt="illustration" />
                 </Grid>
             </Grid>
         </Container>
