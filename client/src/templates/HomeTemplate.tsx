@@ -7,18 +7,19 @@ import Illustration from 'assets/illustration.png';
 interface HomeTemplateProps {
     header: React.ReactElement;
     mobileMenu: React.ReactElement;
+    leftSection: React.ReactElement;
 }
 
-const HomeTemplate: React.FC<HomeTemplateProps> = ({ header, mobileMenu }) => {
+const HomeTemplate: React.FC<HomeTemplateProps> = ({ header, mobileMenu, leftSection }) => {
     return (
         <Container>
             {header}
             {mobileMenu}
             <Grid container>
-                <Grid container item md={6} xs={12}>
-                    1
+                <Grid container item direction="column" justify="center" md={6} sm={6} xs={12}>
+                    {leftSection}
                 </Grid>
-                <Grid container item md={6} xs={12}>
+                <Grid container item justify="center" alignItems="center" md={6} sm={6} xs={12}>
                     <img src={Illustration} alt="illustration" />
                 </Grid>
             </Grid>
@@ -29,6 +30,7 @@ const HomeTemplate: React.FC<HomeTemplateProps> = ({ header, mobileMenu }) => {
 HomeTemplate.propTypes = {
     header: PropTypes.element.isRequired,
     mobileMenu: PropTypes.element.isRequired,
+    leftSection: PropTypes.element.isRequired,
 };
 
 export { HomeTemplate };
