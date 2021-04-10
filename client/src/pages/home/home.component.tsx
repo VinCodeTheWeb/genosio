@@ -38,6 +38,13 @@ const HomePage: React.FC = () => {
                     </Hidden>
                 </>
             }
+            rightSection={
+                <Hidden mdUp>
+                    <Button className={classes.btnExplore} variant="contained" color="primary">
+                        Explore More
+                    </Button>
+                </Hidden>
+            }
         />
     );
 };
@@ -69,11 +76,7 @@ export default HomePage;
                         <img className={classes.illustration} src={Illustration} alt="illustration" />
                     </Grid>
                     <Grid>
-                        <Hidden mdUp>
-                            <Button className={classes.btnExplore} variant="contained" color="primary">
-                                Explore More
-                            </Button>
-                        </Hidden>
+                        
                     </Grid>
                 </Grid>
             </Container>

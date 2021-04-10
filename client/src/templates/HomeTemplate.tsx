@@ -8,9 +8,10 @@ interface HomeTemplateProps {
     header: React.ReactElement;
     mobileMenu: React.ReactElement;
     leftSection: React.ReactElement;
+    rightSection: React.ReactElement;
 }
 
-const HomeTemplate: React.FC<HomeTemplateProps> = ({ header, mobileMenu, leftSection }) => {
+const HomeTemplate: React.FC<HomeTemplateProps> = ({ header, mobileMenu, leftSection, rightSection }) => {
     return (
         <Container>
             {header}
@@ -20,7 +21,10 @@ const HomeTemplate: React.FC<HomeTemplateProps> = ({ header, mobileMenu, leftSec
                     {leftSection}
                 </Grid>
                 <Grid container item justify="center" alignItems="center" md={6} sm={6} xs={12}>
-                    <img src={Illustration} alt="illustration" />
+                    <Grid>
+                        <img src={Illustration} alt="illustration" />
+                    </Grid>
+                    <Grid>{rightSection}</Grid>
                 </Grid>
             </Grid>
         </Container>
@@ -31,6 +35,7 @@ HomeTemplate.propTypes = {
     header: PropTypes.element.isRequired,
     mobileMenu: PropTypes.element.isRequired,
     leftSection: PropTypes.element.isRequired,
+    rightSection: PropTypes.element.isRequired,
 };
 
 export { HomeTemplate };
