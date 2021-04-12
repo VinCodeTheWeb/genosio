@@ -14,6 +14,8 @@ describe('<Home />', () => {
 
     it('renders correct text content', () => {
         render(<Home />);
-        ['From Idea', 'To Production'].forEach((text) => screen.getByText(text));
+        ['From Idea', 'To Production', 'We are a bright team of designer & developer'].forEach((text) =>
+            screen.getByText(text),
+        );
     });
 });

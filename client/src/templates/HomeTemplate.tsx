@@ -21,10 +21,7 @@ const HomeTemplate: React.FC<HomeTemplateProps> = ({ header, mobileMenu, leftSec
                     {leftSection}
                 </Grid>
                 <Grid container item justify="center" alignItems="center" md={6} sm={6} xs={12}>
-                    <Grid>
-                        <img src={Illustration} alt="illustration" />
-                    </Grid>
-                    <Grid>{rightSection}</Grid>
+                    {rightSection}
                 </Grid>
             </Grid>
         </Container>

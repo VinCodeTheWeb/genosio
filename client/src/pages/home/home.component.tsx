@@ -39,11 +39,16 @@ const HomePage: React.FC = () => {
                 </>
             }
             rightSection={
-                <Hidden mdUp>
-                    <Button className={classes.btnExplore} variant="contained" color="primary">
-                        Explore More
-                    </Button>
-                </Hidden>
+                <>
+                    <Grid>
+                        <img className={classes.illustration} src={Illustration} alt="illustration" />
+                    </Grid>
+                    <Hidden mdUp>
+                        <Button className={classes.btnExplore} variant="contained" color="primary">
+                            Explore More
+                        </Button>
+                    </Hidden>
+                </>
             }
         />
     );
