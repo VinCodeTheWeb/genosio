@@ -2,8 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Container, Grid } from '@material-ui/core';
 
-import Illustration from 'assets/illustration.png';
-
 interface HomeTemplateProps {
     header: React.ReactElement;
     mobileMenu: React.ReactElement;
