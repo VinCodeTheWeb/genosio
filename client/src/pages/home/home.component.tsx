@@ -50,6 +50,7 @@ const HomePage: React.FC = () => {
                     </Hidden>
                 </>
             }
+            about={<h1>About section</h1>}
         />
     );
 };
