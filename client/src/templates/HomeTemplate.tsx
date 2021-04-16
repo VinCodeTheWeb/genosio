@@ -12,19 +12,21 @@ interface HomeTemplateProps {
 
 const HomeTemplate: React.FC<HomeTemplateProps> = ({ header, mobileMenu, leftSection, rightSection, about }) => {
     return (
-        <Container>
-            {header}
-            {mobileMenu}
-            <Grid container>
-                <Grid container item direction="column" justify="center" md={6} sm={6} xs={12}>
-                    {leftSection}
+        <div style={{ border: '1px solid red' }}>
+            <Container>
+                {header}
+                {mobileMenu}
+                <Grid container>
+                    <Grid container item direction="column" justify="center" md={6} sm={6} xs={12}>
+                        {leftSection}
+                    </Grid>
+                    <Grid container item justify="center" alignItems="center" md={6} sm={6} xs={12}>
+                        {rightSection}
+                    </Grid>
                 </Grid>
-                <Grid container item justify="center" alignItems="center" md={6} sm={6} xs={12}>
-                    {rightSection}
-                </Grid>
-            </Grid>
-            <Grid>{about}</Grid>
-        </Container>
+                <Grid>{about}</Grid>
+            </Container>
+        </div>
     );
 };
 

@@ -5,7 +5,8 @@ const styles = ({ breakpoints }: Theme) =>
     createStyles({
         container: {
             display: 'flex',
-            height: '800px',
+            height: '80rem',
+            border: '1px solid red',
             [breakpoints.down('sm')]: {
                 height: '0',
                 flexDirection: 'column',
