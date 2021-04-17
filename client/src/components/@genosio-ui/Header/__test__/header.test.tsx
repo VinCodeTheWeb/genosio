@@ -2,24 +2,22 @@ import { cleanup, render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom';
 
 // Components
-import { Header } from './header.component';
+import { Header } from '../header.component';
 
 jest.mock('react-i18next', () => ({
     useTranslation: () => ({ t: (key: string) => key }),
 }));
 
 describe('<Header /> component', () => {
+    let wrapper: any;
     beforeEach(() => {
-        render(<Header />);
+        wrapper = render(<Header />);
     });
 
     afterEach(cleanup);
 
     it('renders without error', () => {
-        render(<Header />);
-    });
-
-    it('should select header by its role', () => {
-        screen.getByRole('heading');
+        const img = screen.getByRole('img');
+        expect(img).toBeInTheDocument();
     });
 });

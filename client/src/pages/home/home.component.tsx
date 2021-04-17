@@ -9,15 +9,19 @@ import { Header } from 'components/@genosio-ui/Header/header.component';
 import { Menu } from 'components/@genosio-ui/Menu/menu.component';
 
 // HomeTemplate
-import { HomeTemplate } from 'templates/HomeTemplate';
+import { HomeTemplate } from 'templates/HomeTemplate/home-template.component';
 // Styles
 import { useStyles } from './home.styles';
 
 const HomePage: React.FC = () => {
     const classes = useStyles();
 
-    return (
-        <HomeTemplate
+    return <HomeTemplate header={<Header />} />;
+};
+
+export default HomePage;
+
+/* <HomeTemplate
             header={<Header />}
             mobileMenu={<Menu />}
             leftSection={
@@ -51,8 +55,4 @@ const HomePage: React.FC = () => {
                 </>
             }
             about={<h1>About section</h1>}
-        />
-    );
-};
-
-export default HomePage;
+        /> */
