@@ -16,7 +16,39 @@ import { useStyles } from './home.styles';
 const HomePage: React.FC = () => {
     const classes = useStyles();
 
-    return <HomeTemplate header={<Header />} />;
+    return (
+        <HomeTemplate
+            header={<Header />}
+            leftSection={
+                <>
+                    <Typography className={classes.headingFirst} variant="h1">
+                        From Idea
+                    </Typography>
+                    <Typography className={classes.headingSecond} variant="h1">
+                        To Production
+                    </Typography>
+                    <Typography className={classes.subheading} variant="h6">
+                        We are a bright team of designer & developer
+                    </Typography>
+                    <Hidden mdDown>
+                        <Button className={classes.btnExplore} variant="contained" color="primary">
+                            Explore More
+                        </Button>
+                    </Hidden>
+                </>
+            }
+            rightSection={
+                <>
+                    <img className={classes.illustration} src={Illustration} alt="illustration" />
+                    <Hidden mdUp>
+                        <Button className={classes.btnExplore} variant="contained" color="primary">
+                            Explore More
+                        </Button>
+                    </Hidden>
+                </>
+            }
+        />
+    );
 };
 
 export default HomePage;
