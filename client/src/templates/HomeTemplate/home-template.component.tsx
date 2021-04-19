@@ -9,10 +9,9 @@ interface HomeTemplateProps {
     mobileMenu?: React.ReactElement;
     leftSection: React.ReactElement;
     rightSection: React.ReactElement;
-    about?: React.ReactElement;
 }
 
-const HomeTemplate: React.FC<HomeTemplateProps> = ({ header, mobileMenu, leftSection, rightSection, about }) => {
+const HomeTemplate: React.FC<HomeTemplateProps> = ({ header, leftSection, rightSection }) => {
     const classes = useStyles();
     return (
         <div className={classes.root}>
@@ -21,20 +20,18 @@ const HomeTemplate: React.FC<HomeTemplateProps> = ({ header, mobileMenu, leftSec
                     {header}
                 </Grid>
             </Container>
-            <Container disableGutters>
-                <Grid>{leftSection}</Grid>
-                <Grid>{rightSection}</Grid>
-            </Container>
+            <Grid container direction="column">
+                <Grid item>{leftSection}</Grid>
+                <Grid item>{rightSection}</Grid>
+            </Grid>
         </div>
     );
 };
 
 HomeTemplate.propTypes = {
     header: PropTypes.element.isRequired,
-    mobileMenu: PropTypes.element.isRequired,
     leftSection: PropTypes.element.isRequired,
     rightSection: PropTypes.element.isRequired,
-    about: PropTypes.element.isRequired,
 };
 
 export { HomeTemplate };
