@@ -20,7 +20,7 @@ const HomeTemplate: React.FC<HomeTemplateProps> = ({ header, leftSection, rightS
                     {header}
                 </Grid>
             </Container>
-            <Grid container direction="column">
+            <Grid container direction="row" alignItems="center" justify="space-between">
                 <Grid item>{leftSection}</Grid>
                 <Grid item>{rightSection}</Grid>
             </Grid>
