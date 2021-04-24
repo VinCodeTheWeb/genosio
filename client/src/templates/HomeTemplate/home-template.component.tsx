@@ -13,18 +13,18 @@ interface HomeTemplateProps {
 
 const HomeTemplate: React.FC<HomeTemplateProps> = ({ header, leftSection, rightSection }) => {
     const classes = useStyles();
+
     return (
-        <div className={classes.root}>
-            <Container disableGutters>
-                <Grid container alignItems="center" justify="space-between" component="header">
-                    {header}
-                </Grid>
-            </Container>
+        <Container disableGutters>
+            <Grid container alignItems="center" justify="space-between" component="header">
+                {header}
+            </Grid>
+
             <Grid container direction="row" alignItems="center" justify="space-between">
                 <Grid item>{leftSection}</Grid>
                 <Grid item>{rightSection}</Grid>
             </Grid>
-        </div>
+        </Container>
     );
 };
 
