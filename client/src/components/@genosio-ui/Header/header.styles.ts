@@ -2,13 +2,6 @@ import { Theme, createStyles, makeStyles } from '@material-ui/core';
 
 export const styles = ({ breakpoints }: Theme) =>
     createStyles({
-        header: {
-            backgroundColor: 'white',
-            boxShadow: 'none',
-        },
-        wrapper: {
-            justifyContent: 'space-between',
-        },
         logo: {
             height: '14rem',
             [breakpoints.down('sm')]: {
@@ -18,9 +11,7 @@ export const styles = ({ breakpoints }: Theme) =>
                 height: '8rem',
             },
         },
-        nav: {
-            display: 'flex',
-        },
+
         link: {
             listStyleType: 'none',
             fontSize: '1.5rem',

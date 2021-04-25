@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import { useTranslation } from 'react-i18next';
-import { Container, Toolbar, Typography, IconButton, Hidden } from '@material-ui/core/';
+import { Box, Grid, Typography, IconButton, Hidden } from '@material-ui/core/';
 import { Menu } from '@material-ui/icons';
 
 // Components
@@ -22,20 +22,28 @@ const Header: React.FC = () => {
         <>
             <Logo />
             <Hidden mdDown>
-                <nav className={classes.nav}>
-                    <Typography component="li" className={classes.link}>
-                        {t('home')}
-                    </Typography>
-                    <Typography component="li" className={classes.link}>
-                        {t('about')}
-                    </Typography>
-                    <Typography component="li" className={classes.link}>
-                        {t('services')}
-                    </Typography>
-                    <Typography component="li" className={classes.link}>
-                        {t('contact')}
-                    </Typography>
-                </nav>
+                <Grid component="nav">
+                    <Box display="inline-block">
+                        <Typography component="li" className={classes.link}>
+                            {t('home')}
+                        </Typography>
+                    </Box>
+                    <Box display="inline-block">
+                        <Typography component="li" className={classes.link}>
+                            {t('about')}
+                        </Typography>
+                    </Box>
+                    <Box display="inline-block">
+                        <Typography component="li" className={classes.link}>
+                            {t('services')}
+                        </Typography>
+                    </Box>
+                    <Box display="inline-block">
+                        <Typography component="li" className={classes.link}>
+                            {t('contact')}
+                        </Typography>
+                    </Box>
+                </Grid>
             </Hidden>
             <Hidden mdUp>
                 <IconButton role="presentation" onClick={toggleDrawer} aria-label="menu" component="span">

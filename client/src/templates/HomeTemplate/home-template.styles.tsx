@@ -1,11 +1,9 @@
 import { makeStyles, createStyles } from '@material-ui/core/styles';
-import { Theme } from '@material-ui/core';
 
-const styles = ({ breakpoints }: Theme) =>
+const styles = () =>
     createStyles({
-        root: {
-            width: '128.0rem',
-            margin: '0 auto',
+        wrapper: {
+            height: '80rem',
         },
     });
 
