@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Container, Grid } from '@material-ui/core';
+import { Container, Grid, Box } from '@material-ui/core';
 
 import { useStyles } from './home-template.styles';
 
@@ -21,8 +21,12 @@ const HomeTemplate: React.FC<HomeTemplateProps> = ({ header, leftSection, rightS
             </Grid>
 
             <Grid container direction="row" justify="space-between">
-                <Grid item>{leftSection}</Grid>
-                <Grid item>{rightSection}</Grid>
+                <Grid item>
+                    <Box mt="15rem">{leftSection}</Box>
+                </Grid>
+                <Grid item>
+                    <Box mt="5rem">{rightSection}</Box>
+                </Grid>
             </Grid>
         </Container>
     );
