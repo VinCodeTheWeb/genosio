@@ -15,19 +15,21 @@ const HomeTemplate: React.FC<HomeTemplateProps> = ({ header, leftSection, rightS
     const classes = useStyles();
 
     return (
-        <Container className={classes.wrapper} disableGutters>
-            <Grid container alignItems="center" justify="space-between" component="header">
-                {header}
-            </Grid>
+        <Container disableGutters>
+            <Box height="80rem">
+                <Grid container alignItems="center" justify="space-between" component="header">
+                    {header}
+                </Grid>
 
-            <Grid container direction="row" justify="space-between">
-                <Grid item>
-                    <Box mt="15rem">{leftSection}</Box>
+                <Grid container direction="row" justify="space-between">
+                    <Grid item>
+                        <Box mt="15rem">{leftSection}</Box>
+                    </Grid>
+                    <Grid item>
+                        <Box mt="5rem">{rightSection}</Box>
+                    </Grid>
                 </Grid>
-                <Grid item>
-                    <Box mt="5rem">{rightSection}</Box>
-                </Grid>
-            </Grid>
+            </Box>
         </Container>
     );
 };
