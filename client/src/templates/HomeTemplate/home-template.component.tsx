@@ -9,9 +9,10 @@ interface HomeTemplateProps {
     mobileMenu?: React.ReactElement;
     leftSection: React.ReactElement;
     rightSection: React.ReactElement;
+    about: React.ReactElement;
 }
 
-const HomeTemplate: React.FC<HomeTemplateProps> = ({ header, leftSection, rightSection }) => {
+const HomeTemplate: React.FC<HomeTemplateProps> = ({ header, leftSection, rightSection, about }) => {
     const classes = useStyles();
 
     return (
@@ -30,6 +31,8 @@ const HomeTemplate: React.FC<HomeTemplateProps> = ({ header, leftSection, rightS
                     </Grid>
                 </Grid>
             </Box>
+
+            <Box height="100.47rem">{about}</Box>
         </Container>
     );
 };
@@ -38,6 +41,7 @@ HomeTemplate.propTypes = {
     header: PropTypes.element.isRequired,
     leftSection: PropTypes.element.isRequired,
     rightSection: PropTypes.element.isRequired,
+    about: PropTypes.element.isRequired,
 };
 
 export { HomeTemplate };
