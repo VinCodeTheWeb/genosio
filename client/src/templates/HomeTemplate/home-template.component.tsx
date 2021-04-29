@@ -33,6 +33,7 @@ const HomeTemplate: React.FC<HomeTemplateProps> = ({ header, leftSection, rightS
             </Box>
 
             <Box height="100.47rem">{about}</Box>
+            <Box height="100.47rem">{about}</Box>
         </Container>
     );
 };
