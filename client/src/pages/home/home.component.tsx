@@ -62,39 +62,3 @@ const HomePage: React.FC = () => {
 };
 
 export default HomePage;
-
-/* <HomeTemplate
-            header={<Header />}
-            mobileMenu={<Menu />}
-            leftSection={
-                <>
-                    <Typography className={classes.headingFirst} variant="h1">
-                        From Idea
-                    </Typography>
-                    <Typography className={classes.headingSecond} variant="h1">
-                        To Production
-                    </Typography>
-                    <Typography className={classes.subheading} variant="h6">
-                        We are a bright team of designer & developer
-                    </Typography>
-                    <Hidden mdDown>
-                        <Button className={classes.btnExplore} variant="contained" color="primary">
-                            Explore More
-                        </Button>
-                    </Hidden>
-                </>
-            }
-            rightSection={
-                <>
-                    <Grid>
-                        <img className={classes.illustration} src={Illustration} alt="illustration" />
-                    </Grid>
-                    <Hidden mdUp>
-                        <Button className={classes.btnExplore} variant="contained" color="primary">
-                            Explore More
-                        </Button>
-                    </Hidden>
-                </>
-            }
-            about={<h1>About section</h1>}
-        /> */
