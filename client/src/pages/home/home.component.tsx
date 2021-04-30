@@ -1,8 +1,9 @@
 import React from 'react';
-import { Typography, Container, Grid, Button, Hidden } from '@material-ui/core';
+import { Typography, Container, Grid, Box, Button, Hidden } from '@material-ui/core';
 
 // Assets
 import Illustration from 'assets/illustration@2x.png';
+import People from 'assets/people.png';
 
 // Components
 import { Header } from 'components/@genosio-ui/Header/header.component';
@@ -47,6 +48,15 @@ const HomePage: React.FC = () => {
                     </Hidden>
                 </>
             }
+            aboutImg={People}
+            aboutParagraph={
+                <>
+                    <Box>
+                        <Typography>About Me</Typography>
+                    </Box>
+                </>
+            }
+            aboutCategories={<>Categories</>}
         />
     );
 };

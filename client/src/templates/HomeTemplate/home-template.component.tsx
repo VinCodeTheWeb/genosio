@@ -9,10 +9,19 @@ interface HomeTemplateProps {
     mobileMenu?: React.ReactElement;
     leftSection: React.ReactElement;
     rightSection: React.ReactElement;
-    about: React.ReactElement;
+    aboutImg: string;
+    aboutParagraph: React.ReactElement;
+    aboutCategories: React.ReactElement;
 }
 
-const HomeTemplate: React.FC<HomeTemplateProps> = ({ header, leftSection, rightSection, about }) => {
+const HomeTemplate: React.FC<HomeTemplateProps> = ({
+    header,
+    leftSection,
+    rightSection,
+    aboutImg,
+    aboutParagraph,
+    aboutCategories,
+}) => {
     const classes = useStyles();
 
     return (
@@ -32,8 +41,16 @@ const HomeTemplate: React.FC<HomeTemplateProps> = ({ header, leftSection, rightS
                 </Grid>
             </Box>
 
-            <Box height="100.47rem">{about}</Box>
-            <Box height="100.47rem">{about}</Box>
+            <Box height="100.47rem">
+                <Grid container>
+                    <Grid item>
+                        <img src={aboutImg} alt="people-working" />
+                    </Grid>
+                    <Grid item>{aboutParagraph}</Grid>
+                </Grid>
+
+                <Grid container>{aboutCategories}</Grid>
+            </Box>
         </Container>
     );
 };
@@ -42,7 +59,9 @@ HomeTemplate.propTypes = {
     header: PropTypes.element.isRequired,
     leftSection: PropTypes.element.isRequired,
     rightSection: PropTypes.element.isRequired,
-    about: PropTypes.element.isRequired,
+    aboutImg: PropTypes.string.isRequired,
+    aboutCategories: PropTypes.element.isRequired,
+    aboutParagraph: PropTypes.element.isRequired,
 };
 
 export { HomeTemplate };
