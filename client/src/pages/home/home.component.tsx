@@ -51,9 +51,7 @@ const HomePage: React.FC = () => {
             aboutImg={People}
             aboutParagraph={
                 <>
-                    <Box>
-                        <Typography>About Me</Typography>
-                    </Box>
+                    <Typography color="primary">About Me</Typography>
                 </>
             }
             aboutCategories={<>Categories</>}
