@@ -51,7 +51,17 @@ const HomePage: React.FC = () => {
             aboutImg={People}
             aboutParagraph={
                 <>
-                    <Typography color="primary">About Me</Typography>
+                    <Box>
+                        <Typography className={classes.aboutText} color="primary">
+                            About Me
+                        </Typography>
+                    </Box>
+
+                    <Box>
+                        <Typography className={classes.hiringText} variant="h6">
+                            Why hiring us for your next project
+                        </Typography>
+                    </Box>
                 </>
             }
             aboutCategories={<>Categories</>}

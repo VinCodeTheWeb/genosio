@@ -47,6 +47,13 @@ const styles = ({ breakpoints }: Theme) =>
                 width: '30rem',
             },
         },
+        aboutText: {
+            textTransform: 'uppercase',
+            fontSize: '.8rem',
+        },
+        hiringText: {
+            fontSize: '2.1rem',
+        },
     });
 
 export const useStyles = makeStyles(styles);
