@@ -62,6 +62,20 @@ const HomePage: React.FC = () => {
                             Why hiring us for your next project
                         </Typography>
                     </Box>
+
+                    <Box>
+                        <Typography variant="subtitle1">
+                            We are creative team from all over the world, working in web development and UI/UX. We enjoy
+                            turning complex problems into simple, beautiful and intuitive designs.
+                        </Typography>
+                    </Box>
+
+                    <Box>
+                        <Typography variant="subtitle1">
+                            Our job is to build your website so that it is functional and user-friendly but at the same
+                            time attractive.
+                        </Typography>
+                    </Box>
                 </>
             }
             aboutCategories={<>Categories</>}
