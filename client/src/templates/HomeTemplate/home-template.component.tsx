@@ -43,10 +43,10 @@ const HomeTemplate: React.FC<HomeTemplateProps> = ({
 
             <Box height="100.47rem">
                 <Grid container>
-                    <Grid item md={6}>
+                    <Grid className={classes.imgPeopleContainer} item>
                         <img src={aboutImg} alt="people-working" />
                     </Grid>
-                    <Grid item md={6}>
+                    <Grid className={classes.aboutParagraphContainer} item md={6}>
                         {aboutParagraph}
                     </Grid>
                 </Grid>
