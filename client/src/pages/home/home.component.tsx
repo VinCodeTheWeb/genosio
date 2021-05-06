@@ -76,6 +76,10 @@ const HomePage: React.FC = () => {
                             time attractive.
                         </Typography>
                     </Box>
+
+                    <Button className={classes.btnContact} variant="contained" color="primary">
+                        Contact us
+                    </Button>
                 </>
             }
             aboutCategories={<>Categories</>}

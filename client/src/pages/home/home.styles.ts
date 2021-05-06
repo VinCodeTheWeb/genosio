@@ -54,6 +54,13 @@ const styles = ({ breakpoints }: Theme) =>
         hiringText: {
             fontSize: '2.1rem',
         },
+        btnContact: {
+            width: '16.3rem',
+            height: '5.2rem',
+            borderRadius: 5,
+            textTransform: 'none',
+            marginTop: '5rem',
+        },
     });
 
 export const useStyles = makeStyles(styles);
