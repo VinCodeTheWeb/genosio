@@ -50,6 +50,18 @@ const styles = ({ breakpoints }: Theme) =>
         aboutText: {
             textTransform: 'uppercase',
             fontSize: '.8rem',
+            '&::before': {
+                content: '"ABOUT ME"',
+                color: '#0FBF61',
+                backgroundColor: '#0FBF61',
+                borderRadius: '.5rem',
+                opacity: '.1',
+                height: '.8rem',
+                width: '5rem',
+                position: 'absolute',
+                top: '.5rem',
+                left: '.5rem',
+            },
         },
         hiringText: {
             fontSize: '2.1rem',
