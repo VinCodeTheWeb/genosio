@@ -57,9 +57,9 @@ const HomePage: React.FC = () => {
                         </Typography>
                     </Box>
 
-                    <Box>
+                    <Box width="22.4rem" marginBottom="3rem">
                         <Typography className={classes.hiringText} variant="h6">
-                            Why hiring us for your next project
+                            Why hiring us for your next project?
                         </Typography>
                     </Box>
 

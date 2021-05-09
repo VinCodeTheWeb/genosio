@@ -65,6 +65,7 @@ const styles = ({ breakpoints }: Theme) =>
         },
         hiringText: {
             fontSize: '2.1rem',
+            fontWeight: 700,
         },
         btnContact: {
             width: '16.3rem',
