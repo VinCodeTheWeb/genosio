@@ -63,7 +63,7 @@ const HomePage: React.FC = () => {
                         </Typography>
                     </Box>
 
-                    <Box>
+                    <Box marginBottom="3.5rem">
                         <Typography variant="subtitle1">
                             We are creative team from all over the world, working in web development and UI/UX. We enjoy
                             turning complex problems into simple, beautiful and intuitive designs.
