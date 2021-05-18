@@ -63,6 +63,9 @@ const styles = ({ breakpoints }: Theme) =>
                 left: '.5rem',
             },
         },
+        aboutParaText: {
+            fontSize: '1.8rem',
+        },
         hiringText: {
             fontSize: '2.1rem',
             fontWeight: 700,

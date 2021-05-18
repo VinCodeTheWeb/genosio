@@ -42,7 +42,7 @@ const HomeTemplate: React.FC<HomeTemplateProps> = ({
             </Box>
 
             <Box height="100.47rem">
-                <Grid container>
+                <Grid container direction="row" justify="flex-start">
                     <Grid className={classes.imgPeopleContainer} item>
                         <img src={aboutImg} alt="people-working" />
                     </Grid>

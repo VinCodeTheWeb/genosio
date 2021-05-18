@@ -9,7 +9,9 @@ const styles = () =>
             paddingLeft: '8.7rem',
         },
         aboutParagraphContainer: {
-            paddingLeft: '8.2rem',
+            maxWidth: '32.3rem',
+            marginLeft: '8.2rem',
+            marginTop: '3.3rem',
         },
     });
 
