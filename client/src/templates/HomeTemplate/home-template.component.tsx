@@ -12,6 +12,7 @@ interface HomeTemplateProps {
     aboutImg: string;
     aboutParagraph: React.ReactElement;
     aboutCategories: React.ReactElement;
+    serviceHeadings: React.ReactElement;
 }
 
 const HomeTemplate: React.FC<HomeTemplateProps> = ({
@@ -21,6 +22,7 @@ const HomeTemplate: React.FC<HomeTemplateProps> = ({
     aboutImg,
     aboutParagraph,
     aboutCategories,
+    serviceHeadings,
 }) => {
     const classes = useStyles();
 
@@ -53,6 +55,12 @@ const HomeTemplate: React.FC<HomeTemplateProps> = ({
 
                 <Grid container>{aboutCategories}</Grid>
             </Box>
+
+            <Box height="201.0rem">
+                <Grid container>
+                    <Grid item>{serviceHeadings}</Grid>
+                </Grid>
+            </Box>
         </Container>
     );
 };
@@ -64,6 +72,7 @@ HomeTemplate.propTypes = {
     aboutImg: PropTypes.string.isRequired,
     aboutCategories: PropTypes.element.isRequired,
     aboutParagraph: PropTypes.element.isRequired,
+    serviceHeadings: PropTypes.element.isRequired,
 };
 
 export { HomeTemplate };
