@@ -83,6 +83,11 @@ const HomePage: React.FC = () => {
                 </>
             }
             aboutCategories={<>Categories</>}
+            serviceHeadings={
+                <>
+                    <Typography>My Services</Typography>
+                </>
+            }
         />
     );
 };
