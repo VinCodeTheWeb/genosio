@@ -86,6 +86,7 @@ const HomePage: React.FC = () => {
             serviceHeadings={
                 <>
                     <Typography>My Services</Typography>
+                    <Typography>Our Provided Features & Expertise</Typography>
                 </>
             }
         />
