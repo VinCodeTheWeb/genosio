@@ -77,6 +77,22 @@ const styles = ({ breakpoints }: Theme) =>
             textTransform: 'none',
             marginTop: '5rem',
         },
+        servicesText: {
+            textTransform: 'uppercase',
+            fontSize: '2rem',
+            '&::before': {
+                content: '" "',
+                color: '#0FBF61',
+                backgroundColor: '#0FBF61',
+                borderRadius: '1.5rem',
+                opacity: '.1',
+                height: '1.7rem',
+                width: '12.8rem',
+                position: 'absolute',
+                top: '.5rem',
+                left: '1.3rem',
+            },
+        },
     });
 
 export const useStyles = makeStyles(styles);

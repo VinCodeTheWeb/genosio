@@ -85,7 +85,11 @@ const HomePage: React.FC = () => {
             aboutCategories={<>Categories</>}
             serviceHeadings={
                 <>
-                    <Typography>My Services</Typography>
+                    <Box position="relative">
+                        <Typography className={classes.servicesText} color="primary" variant="h3">
+                            My Services
+                        </Typography>
+                    </Box>
                     <Typography>Our Provided Features & Expertise</Typography>
                 </>
             }
