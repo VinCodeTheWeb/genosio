@@ -57,7 +57,7 @@ const HomeTemplate: React.FC<HomeTemplateProps> = ({
             </Box>
 
             <Box height="201.0rem">
-                <Grid container>
+                <Grid container justify="center">
                     <Grid item>{serviceHeadings}</Grid>
                 </Grid>
             </Box>

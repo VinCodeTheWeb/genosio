@@ -79,10 +79,12 @@ const styles = ({ breakpoints }: Theme) =>
         },
         servicesText: {
             textTransform: 'uppercase',
+            textAlign: 'center',
             fontSize: '2rem',
             '&::before': {
                 content: '" "',
                 color: '#0FBF61',
+                textAlign: 'center',
                 backgroundColor: '#0FBF61',
                 borderRadius: '1.5rem',
                 opacity: '.1',
@@ -90,7 +92,7 @@ const styles = ({ breakpoints }: Theme) =>
                 width: '12.8rem',
                 position: 'absolute',
                 top: '.5rem',
-                left: '1.3rem',
+                left: '7rem',
             },
         },
     });
