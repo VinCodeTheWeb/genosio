@@ -92,8 +92,11 @@ const styles = ({ breakpoints }: Theme) =>
                 width: '12.8rem',
                 position: 'absolute',
                 top: '.5rem',
-                left: '7rem',
             },
+        },
+        featuresAndExpertiseText: {
+            fontSize: '4rem',
+            fontWeight: 'bold',
         },
     });
 

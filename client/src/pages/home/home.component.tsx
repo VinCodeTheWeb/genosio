@@ -86,11 +86,15 @@ const HomePage: React.FC = () => {
             serviceHeadings={
                 <>
                     <Box position="relative">
-                        <Typography className={classes.servicesText} color="primary" variant="h3">
+                        <Typography className={classes.servicesText} color="primary" variant="h6">
                             My Services
                         </Typography>
                     </Box>
-                    <Typography>Our Provided Features & Expertise</Typography>
+                    <Box>
+                        <Typography className={classes.featuresAndExpertiseText} variant="h4">
+                            Our Provided Features & Expertise
+                        </Typography>
+                    </Box>
                 </>
             }
         />
